@@ -72,8 +72,3 @@ To reduce power-ground noise in a multilayer PCB by:
 
 ---
 
-## 📎 Resources
-
-- [Installation Guide for Cadence Sigrity (Google Doc)](https://docs.google.com/document/d/19mCAR2YfwvplPLo1_ipDft8VabcYndrY3BfVrZvxIhM/edi
-
-
