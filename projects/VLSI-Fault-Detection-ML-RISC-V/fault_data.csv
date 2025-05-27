@@ -1,0 +1,7 @@
+a,b,fault_en,sum,fault_type
+0,1,0,1,no_fault
+1,1,0,2,no_fault
+1,2,1,7,stuck_at
+3,1,1,6,stuck_at
+1,2,1,3,no_fault
+2,2,1,5,stuck_at
