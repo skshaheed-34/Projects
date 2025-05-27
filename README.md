@@ -32,7 +32,7 @@ Example exported model logic:
 if (x[2] <= 0.5) return 0;  // no_fault
 else return 1;             // stuck_at
 
-##Results
+## Results
 Achieved 100% classification accuracy on test data
 Verilog logic and ML predictions align across simulation
 Inference logic translated and verified in Venus (RISC-V simulator)
