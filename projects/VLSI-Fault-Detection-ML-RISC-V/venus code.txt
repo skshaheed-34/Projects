@@ -1,0 +1,33 @@
+.data
+msg_ok: .asciiz "ML Result: no_fault\n"
+msg_err: .asciiz "ML Result: stuck_at\n"
+
+.text
+.globl main
+
+main:
+    # Input: x = [a, b, fault_en, sum]
+    addi t0, x0, 2       # a = 2
+    addi t1, x0, 1       # b = 1
+    addi t2, x0, 1       # fault_en = 1 (model uses x[2])
+    addi t3, x0, 3       # sum = 3
+
+    # Decision tree uses: if x[2] <= 0.5 → no_fault
+    # So compare t2 (fault_en) to 0
+    ble t2, x0, ml_no_fault
+    j ml_fault
+
+ml_no_fault:
+    li a0, 4
+    la a1, msg_ok
+    ecall
+    j exit
+
+ml_fault:
+    li a0, 4
+    la a1, msg_err
+    ecall
+
+exit:
+    li a0, 10
+    ecall
