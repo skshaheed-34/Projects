@@ -43,7 +43,7 @@ This project demonstrates the design and simulation of a Phase-Locked Loop (PLL)
 ## 📊 Tools Used
 
 - **LTspice XVII / 24.1.9** – Simulation platform
-- **MATLAB/Excel** (optional) – For waveform analysis and FFT
+- **MATLAB/Excel**  – For waveform analysis and FFT
 - **GitHub** – Version control and documentation
 
 ---
